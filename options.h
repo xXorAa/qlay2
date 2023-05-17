@@ -207,13 +207,6 @@ GCC 2.7.2 understands, please FIXME
 }
 #endif
 
-#if __GNUC__ > 2 || __GNUC_MINOR__ > 6
-
-#if defined(__i386__) && !defined(USE_PROFILING)
-#define REGPARAM __attribute__((regparm(3)))
-#endif /* __i386__ */
-
-#endif /* GCC version 2.7 or higher */
 #endif /* GCC 2 */
 
 #ifndef REGPARAM
