@@ -50,7 +50,7 @@ int tracepos=0;
 int areg_byteinc[] = { 1,1,1,1,1,1,1,2 }; // A7 does word incs
 int imm8_table[] = { 8,1,2,3,4,5,6,7 };
 
-cpuop_func *cpufunctbl[65536];
+extern cpuop_func *cpufunctbl[65536];
 
 #ifdef COUNT_INSTRS
 static unsigned long int instrcount[65536];
