@@ -1,0 +1,6 @@
+#include "sysconfig.h"
+#include "sysdeps.h"
+#include "options.h"
+#include "qlmem.h"
+#include "exe68k.h"
+#include "op68ktbl.h"

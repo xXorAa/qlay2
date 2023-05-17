@@ -1,0 +1,44 @@
+100 REMark QLAY SuperBasic Benchmark
+110 CLOSE#1
+120 OPEN#1,con_256x202a256x0
+130 INK#1,7:PAPER#1,2:BORDER#1,1,7,0
+140 MODE 4
+150 PRINT#2,\"   QLAY SuperBasic Benchmark "
+160 PRINT#2,\"   3 tests, 20 seconds each"
+170 PRINT#2,\"   Please wait a minute ..."\\
+180 FOR i=0 TO 20:PRINT " "
+190 :
+200 t=DATE
+210 p=0
+220 REPeat l1
+230 FOR i=1 TO 20
+240  PRINT p;" ";
+250  p=p+1
+260 NEXT i
+270 IF DATE-t>20:EXIT l1
+280 END REPeat l1
+290 PRINT#2,\" Printing         ";p
+300 :
+310 t=DATE
+320 p=0
+330 REPeat l2
+340 FOR i=1 TO 20
+350  a=SIN(1):b=LN(4):c=EXP(10)
+360  p=p+1
+370 NEXT i
+380 IF DATE-t>20: EXIT l2
+390 END REPeat l2
+400 PRINT#2,\" Functions        ";p
+410 :
+420 t=DATE
+430 p=0
+440 REPeat l3
+450 FOR i=1 TO 20
+460  a$="abcdefghijklmnopqrstuvwxyz"
+470  b$="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+480  c$=FILL$(a$&b$,i)
+490  p=p+1
+500 NEXT i
+510 IF DATE-t>20:EXIT l3
+520 END REPeat l3
+530 PRINT#2,\" Strings          ";p

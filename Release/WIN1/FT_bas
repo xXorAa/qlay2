@@ -1,0 +1,11 @@
+100 CLS
+110 d=60
+120 PRINT 'Wait ';d;' seconds for -f test'
+130 t=DATE
+140 PAUSE d*50
+150 e=DATE-t
+160 PRINT 'Delay should be ';d;' seconds'
+170 PRINT 'Actual delay is ';e;' seconds'
+180 IF e-d>1:PRINT 'Divide -f by ';e/d
+190 IF d-e>1:PRINT 'Multiply -f with ';d/e
+200 IF ABS(d-e)<2:PRINT 'Current value of -f is about right'

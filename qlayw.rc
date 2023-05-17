@@ -1,0 +1,622 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "qlayw.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+QLAY2                   ICON    DISCARDABLE     "ico00001.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,95
+ PRODUCTVERSION 0,0,0,95
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "QLAY2, Sinclair QL Emulator port of QLAY for Windows 2000 and Windows XP.\0"
+            VALUE "CompanyName", "GPL\0"
+            VALUE "FileDescription", "QLAY2\0"
+            VALUE "FileVersion", "0, 0, 0, 95\0"
+            VALUE "InternalName", "QLAY2\0"
+            VALUE "LegalCopyright", "Copyright © 2003, Jimmy Montesinos and Raphael Zhou\0"
+            VALUE "LegalTrademarks", "QLay and QLayW is Copyright by Jan A Venema. Microsoft Windows is Copyright by Microsoft Corporation\0"
+            VALUE "OriginalFilename", "QLAY2.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "QLAY2\0"
+            VALUE "ProductVersion", "0, 0, 0, 95\0"
+            VALUE "SpecialBuild", "Multilanguage\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_GERMAN MENU DISCARDABLE 
+BEGIN
+    POPUP "&QL"
+    BEGIN
+        MENUITEM "&Konfiguration",              IDM_DLG_CFG
+        MENUITEM "&Ende",                       IDM_END
+    END
+    POPUP "&Befehle"
+    BEGIN
+        MENUITEM "&Reset",                      IDM_RESET
+        MENUITEM "&Disketten-Wechsel",          IDM_InitDisk, GRAYED
+    END
+    POPUP "&Bildschrim"
+    BEGIN
+        MENUITEM "Größe &1: 512x256",           IDM_SIZE1
+        MENUITEM "Größe &2: 512x341",           IDM_SIZE2
+        MENUITEM "Größe &3: 768x512",           IDM_SIZE3
+        MENUITEM "Größe &4: 1024x683",          IDM_SIZE4
+        MENUITEM "Größe &5: 1024x512",          IDM_SIZE5
+        MENUITEM "Größe &6: 1024x768",          IDM_SIZE6
+        MENUITEM "Größe &7: 1280x640",          IDM_SIZE7
+        MENUITEM "Größe &8: 1280x1024",         IDM_SIZE8
+    END
+    POPUP "&Sprache"
+    BEGIN
+        MENUITEM "&Französisch",                IDM_FRENCH
+        MENUITEM "&Englisch",                   IDM_ENGLISH
+        MENUITEM "&Spanisch",                   IDM_SPANISH
+        MENUITEM "&Deutsch",                    IDM_GERMAN, CHECKED
+        MENUITEM "&Italienisch",                IDM_ITALIAN
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Hilfe",                      IDM_HELP
+        MENUITEM "&Über…",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_GERMAN          BITMAP  DISCARDABLE     "BMPRES\\germ.bmp"
+IDB_BMP_GERMAN_S        BITMAP  DISCARDABLE     "BMPRES\\germ_s.bmp"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_SPANISH MENU DISCARDABLE 
+BEGIN
+    POPUP "&QL"
+    BEGIN
+        MENUITEM "&Configuración",              IDM_DLG_CFG
+        MENUITEM "&Salir",                      IDM_END
+    END
+    POPUP "&Comandos"
+    BEGIN
+        MENUITEM "&Reiniciar",                  IDM_RESET
+        MENUITEM "&Cambiar disco",              IDM_InitDisk, GRAYED
+    END
+    POPUP "&Pantalla"
+    BEGIN
+        MENUITEM "Tamaño &1: 512x256",          IDM_SIZE1
+        MENUITEM "Tamaño &2: 512x341",          IDM_SIZE2
+        MENUITEM "Tamaño &3: 768x512",          IDM_SIZE3
+        MENUITEM "Tamaño &4: 1024x683",         IDM_SIZE4
+        MENUITEM "Tamaño &5: 1024x512",         IDM_SIZE5
+        MENUITEM "Tamaño &6: 1024x768",         IDM_SIZE6
+        MENUITEM "Tamaño &7: 1280x640",         IDM_SIZE7
+        MENUITEM "Tamaño &8: 1280x1024",        IDM_SIZE8
+    END
+    POPUP "&Idioma"
+    BEGIN
+        MENUITEM "&Francés",                    IDM_FRENCH
+        MENUITEM "&Inglés",                     IDM_ENGLISH
+        MENUITEM "&Español",                    IDM_SPANISH, CHECKED
+        MENUITEM "&Alemán",                     IDM_GERMAN
+        MENUITEM "&Italiano",                   IDM_ITALIAN
+    END
+    POPUP "&Ayuda"
+    BEGIN
+        MENUITEM "&Ayuda",                      IDM_HELP
+        MENUITEM "&Acerca de...",               IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_SPANISH_S       BITMAP  DISCARDABLE     "BMPRES\\span_s.BMP"
+IDB_BMP_SPANISH         BITMAP  DISCARDABLE     "BMPRES\\span.bmp"
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+QLAY2                   ICON    DISCARDABLE     "qlay.ico"
+QLAYCFG                 ICON    DISCARDABLE     "qlaycfg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+QLAY2 MENU DISCARDABLE 
+BEGIN
+    POPUP "&QL"
+    BEGIN
+        MENUITEM "&Configuration",              IDM_DLG_CFG
+        MENUITEM "&Quitter",                    IDM_END
+    END
+    POPUP "&Commandes"
+    BEGIN
+        MENUITEM "&Reset",                      IDM_RESET
+        MENUITEM "&Changement disque.",         IDM_InitDisk, GRAYED
+    END
+    POPUP "&Ecran"
+    BEGIN
+        MENUITEM "Taille &1: 512x256",          IDM_SIZE1
+        MENUITEM "Taille &2: 512x341",          IDM_SIZE2
+        MENUITEM "Taille &3: 768x512",          IDM_SIZE3
+        MENUITEM "Taille &4: 1024x683",         IDM_SIZE4
+        MENUITEM "Taille &5: 1024x512",         IDM_SIZE5
+        MENUITEM "Taille &6: 1024x768",         IDM_SIZE6
+        MENUITEM "Taille &7: 1280x640",         IDM_SIZE7
+        MENUITEM "Taille &8: 1280x1024",        IDM_SIZE8
+    END
+    POPUP "&Langue", CHECKED
+    BEGIN
+        MENUITEM "&Français",                   IDM_FRENCH, CHECKED
+        MENUITEM "&Anglais",                    IDM_ENGLISH
+        MENUITEM "&Espagnol",                   IDM_SPANISH
+        MENUITEM "&Allemand",                   IDM_GERMAN
+        MENUITEM "&Italien",                    IDM_ITALIAN
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "&Aide",                       IDM_HELP
+        MENUITEM "&A propos de",                IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_FRENCH          BITMAP  DISCARDABLE     "BMPRES\\fren.BMP"
+IDB_BMP_FRENCH_S        BITMAP  DISCARDABLE     "BMPRES\\fren_s.bmp"
+IDB_QLAY21              BITMAP  DISCARDABLE     "BMPRES\\qlphoto.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_CFG_DLG DIALOGEX 4, 20, 299, 145
+STYLE DS_SYSMODAL | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "QLAY2"
+FONT 8, "Lucida Console"
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_OK,249,129,48,12
+    PUSHBUTTON      "CANCEL",ID_CANCEL,200,129,48,12
+    PUSHBUTTON      "SAVE",ID_SAVE,150,129,48,12
+    RTEXT           "Taille memoire",IDC_MemSize,126,6,105,8,NOT WS_GROUP
+    COMBOBOX        ID_CBX_MS,236,3,61,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    RTEXT           "Taille écran",IDC_ScreenSize,125,20,105,8,NOT WS_GROUP
+    COMBOBOX        ID_CBX_SS,236,17,61,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    RTEXT           "Langue clavier",IDC_KeybLayout,124,34,107,8,NOT 
+                    WS_GROUP
+    COMBOBOX        ID_CBX_KBD,236,31,61,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    RTEXT           "Vitesse",IDC_Speed,124,51,58,8,NOT WS_GROUP
+    EDITTEXT        ID_SPEED,184,49,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Délai",IDC_Delay,215,50,56,8,NOT WS_GROUP
+    EDITTEXT        ID_DELAY,274,48,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Pas de souris",ID_CHK_MOUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,116,62,12
+    CONTROL         "Pas de touches ALT",ID_CHK_ALTKEY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,100,116,82,12
+    RTEXT           "BOOT",IDC_RomBoot,2,70,52,8,NOT WS_GROUP
+    EDITTEXT        ID_ROM_BOOT,58,68,132,13,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_BOOT,230,69,12,12
+    RTEXT           "ROM1",IDC_Rom1,3,84,53,9,NOT WS_GROUP
+    EDITTEXT        ID_ROM_NFA,58,83,132,13,ES_AUTOHSCROLL
+    COMBOBOX        ID_ADR_NFA,192,82,37,33,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      ">>",ID_BRW_NFA,230,83,12,12
+    RTEXT           "ROM2",IDC_Rom2,2,100,54,8,NOT WS_GROUP
+    EDITTEXT        ID_ROM_OTHER,58,98,132,13,ES_AUTOHSCROLL | WS_GROUP
+    COMBOBOX        ID_ADR_OTHER,192,97,37,33,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      ">>",ID_BRW_OTHER,230,97,12,12
+    GROUPBOX        "ROM",IDC_RomBox,0,63,248,50
+    CONTROL         114,IDC_IMAGE,"Static",SS_BITMAP | SS_SUNKEN,0,0,121,63
+    PUSHBUTTON      "MDV WIN",ID_MDVWIN,101,129,46,12
+    CONTROL         "fr",IDC_BTN_FRENCH,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,4,130,13,9
+    CONTROL         "en",IDC_BTN_ENGLISH,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,17,130,13,9
+    CONTROL         "sp",IDC_BTN_SPANISH,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,30,130,13,9
+    CONTROL         "ge",IDC_BTN_GERMAN,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,44,130,13,9
+    CONTROL         "it",IDC_BTN_ITALIAN,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,57,130,13,9
+    CONTROL         "Plein écran GDI",IDC_GDIFULLSCREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,192,117,105,10
+END
+
+CFG_WIN DIALOGEX 0, 0, 373, 122
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "QLAY2 - MDV - WIN"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_OK,286,111,43,10
+    PUSHBUTTON      "Cancel",ID_CANCEL,330,111,43,10
+    GROUPBOX        "WIN",115,1,0,185,111
+    EDITTEXT        ID_WIN1,24,6,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN1,162,6,21,12
+    LTEXT           "WIN1",IDC_STATIC,3,8,18,8
+    EDITTEXT        ID_WIN2,24,19,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN2,162,19,21,12
+    LTEXT           "WIN2",IDC_STATIC,3,21,19,8
+    GROUPBOX        "MDV",117,188,0,185,111
+    EDITTEXT        ID_MDV1,212,6,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV1,349,6,21,12
+    LTEXT           "MDV1",IDC_STATIC,190,8,19,8
+    EDITTEXT        ID_MDV2,212,19,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV2,349,19,21,12
+    LTEXT           "MDV2",IDC_STATIC,190,21,20,8
+    EDITTEXT        ID_WIN3,24,32,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN3,162,32,21,12
+    LTEXT           "WIN3",IDC_STATIC,4,34,19,8
+    EDITTEXT        ID_WIN4,24,45,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN4,162,45,21,12
+    LTEXT           "WIN4",IDC_STATIC,4,47,19,8
+    EDITTEXT        ID_WIN5,24,58,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN5,162,58,21,12
+    LTEXT           "WIN5",IDC_STATIC,4,60,19,8
+    EDITTEXT        ID_WIN6,24,71,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN6,162,71,21,12
+    LTEXT           "WIN6",IDC_STATIC,4,73,19,8
+    EDITTEXT        ID_WIN7,24,83,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN7,162,83,21,12
+    LTEXT           "WIN7",IDC_STATIC,4,86,19,8
+    EDITTEXT        ID_WIN8,24,96,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_WIN8,162,96,21,12
+    LTEXT           "WIN8",IDC_STATIC,4,98,19,8
+    EDITTEXT        ID_MDV3,212,32,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV3,349,32,21,12
+    LTEXT           "MDV3",IDC_STATIC,190,34,20,8
+    EDITTEXT        ID_MDV4,212,45,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV4,349,45,21,12
+    LTEXT           "MDV4",IDC_STATIC,190,47,20,8
+    EDITTEXT        ID_MDV5,212,57,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV5,349,57,21,12
+    LTEXT           "MDV5",IDC_STATIC,190,59,20,8
+    EDITTEXT        ID_MDV6,212,70,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV6,349,70,21,12
+    LTEXT           "MDV6",IDC_STATIC,190,72,20,8
+    EDITTEXT        ID_MDV7,212,83,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV7,349,83,21,12
+    LTEXT           "MDV7",IDC_STATIC,190,85,20,8
+    EDITTEXT        ID_MDV8,212,96,136,12,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",ID_BRW_MDV8,349,96,21,12
+    LTEXT           "MDV8",IDC_STATIC,190,98,20,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""qlayw.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    ID_CFG_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 297
+        BOTTOMMARGIN, 141
+    END
+
+    "CFG_WIN", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 121
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_QLAY2 ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_ESCAPE,      IDM_END,                VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_RETURN,      IDM_FULLSCREEN,         VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_QLAY2_CURSOR        CURSOR  DISCARDABLE     "QLAY2.cur"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_ITALIAN MENU DISCARDABLE 
+BEGIN
+    POPUP "&QL"
+    BEGIN
+        MENUITEM "&Configurazione",             IDM_DLG_CFG
+        MENUITEM "&Esci",                       IDM_END
+    END
+    POPUP "&Comandi"
+    BEGIN
+        MENUITEM "&Reset",                      IDM_RESET
+        MENUITEM "&Cambia disco",               IDM_InitDisk, GRAYED
+    END
+    POPUP "&Schermo"
+    BEGIN
+        MENUITEM "Dimensioni &1: 512x256",      IDM_SIZE1
+        MENUITEM "Dimensioni &2: 512x341",      IDM_SIZE2
+        MENUITEM "Dimensioni &3: 768x512",      IDM_SIZE3
+        MENUITEM "Dimensioni &4: 1024x683",     IDM_SIZE4
+        MENUITEM "Dimensioni &5: 1024x512",     IDM_SIZE5
+        MENUITEM "Dimensioni &6: 1024x768",     IDM_SIZE6
+        MENUITEM "Dimensioni &7: 1280x640",     IDM_SIZE7
+        MENUITEM "Dimensioni &8: 1280x1024",    IDM_SIZE8
+    END
+    POPUP "&Linguaggio"
+    BEGIN
+        MENUITEM "&Francese",                   IDM_FRENCH
+        MENUITEM "&Inglese",                    IDM_ENGLISH
+        MENUITEM "&Spagnolo",                   IDM_SPANISH
+        MENUITEM "&Tedesco",                    IDM_GERMAN
+        MENUITEM "&Italiano",                   IDM_ITALIAN, CHECKED
+    END
+    POPUP "&Aiuto"
+    BEGIN
+        MENUITEM "&Aiuto",                      IDM_HELP
+        MENUITEM "&A proposito di ...",         IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_ITALIAN         BITMAP  DISCARDABLE     "BMPRES\\ital.bmp"
+IDB_BMP_ITALIAN_S       BITMAP  DISCARDABLE     "BMPRES\\ital_s.bmp"
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_ENGLISH MENU DISCARDABLE 
+BEGIN
+    POPUP "&QL"
+    BEGIN
+        MENUITEM "&Configuration",              IDM_DLG_CFG
+        MENUITEM "&Exit",                       IDM_END
+    END
+    POPUP "&Commands"
+    BEGIN
+        MENUITEM "&Reset",                      IDM_RESET
+        MENUITEM "&Disk change.",               IDM_InitDisk, GRAYED
+    END
+    POPUP "&Screen"
+    BEGIN
+        MENUITEM "Size &1: 512x256",            IDM_SIZE1
+        MENUITEM "Size &2: 512x341",            IDM_SIZE2
+        MENUITEM "Size &3: 768x512",            IDM_SIZE3
+        MENUITEM "Size &4: 1024x683",           IDM_SIZE4
+        MENUITEM "Size &5: 1024x512",           IDM_SIZE5
+        MENUITEM "Size &6: 1024x768",           IDM_SIZE6
+        MENUITEM "Size &7: 1280x640",           IDM_SIZE7
+        MENUITEM "Size &8: 1280x1024",          IDM_SIZE8
+    END
+    POPUP "&Language"
+    BEGIN
+        MENUITEM "&French",                     IDM_FRENCH
+        MENUITEM "&English",                    IDM_ENGLISH, CHECKED
+        MENUITEM "&Spanish",                    IDM_SPANISH
+        MENUITEM "&German",                     IDM_GERMAN
+        MENUITEM "&Italian",                    IDM_ITALIAN
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       IDM_HELP
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_ENGLISH         BITMAP  DISCARDABLE     "BMPRES\\engl.bmp"
+IDB_BMP_ENGLISH_S       BITMAP  DISCARDABLE     "BMPRES\\engl_s.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

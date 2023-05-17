@@ -1,0 +1,18 @@
+Initialization...
+Writing INI File
+Options written in QLAY2.INI
+RAMSIZE=640k
+00000000-0000beb5: Release\MINERVA198.ROM
+No micro drives found
+15000 instructions/msec
+Preparing M68k emulation ...
+Build: Version 0 Build 095c Sun Jun 8 2003 - 18:00:00
+Options: d6 o0 f15000 w1 m-1
+Installed keyboard driver.
+Installed mouse driver.
+Installed UI Language number 1.
+Installed graphics driver.
+Sinclair QL Pret.
+Writing INI File
+Options written in QLAY2.INI
+No micro drives found

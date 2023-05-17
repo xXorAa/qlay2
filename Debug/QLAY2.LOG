@@ -1,0 +1,15 @@
+Initialization...
+RAMTOP=1024k
+00000000-0000beb5: MINERVA198.ROM
+0000c000-0000cb39: NFA.ROM
+Cannot open MDV\MDV2.MDV
+1000 instructions/msec
+Preparing M68k emulation ...
+Build: Version 0 Build 095c Sun Jun 8 2003 - 18:00:00
+Options: d6 o1 f1000 w1 m1
+Installed keyboard driver.
+Installed mouse driver.
+Installed UI Language number 1.
+Installed graphics driver.
+Sinclair QL Pret.
+GD: cannot open file WIN1\qlay.dir

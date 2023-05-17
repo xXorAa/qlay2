@@ -1,0 +1,136 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: qlay2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Release/qlayw.res" /d "NDEBUG" "R:\QL\QLAY2\QLAY2-Src\qlayw.rc"" 
+Creating temporary file "T:\TEMP\Jimmy\RSP107.tmp" with contents
+[
+/nologo /G6 /Zp16 /MT /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FAcs /Fa"Release/" /Fr"Release/" /Fp"Release/qlay2.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"R:\QL\QLAY2\QLAY2-Src\cfg-win.c"
+"R:\QL\QLAY2\QLAY2-Src\debug.c"
+"R:\QL\QLAY2\QLAY2-Src\exe68k.c"
+"R:\QL\QLAY2\QLAY2-Src\getopt.c"
+"R:\QL\QLAY2\QLAY2-Src\keybuf.c"
+"R:\QL\QLAY2\QLAY2-Src\main.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k0.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k1.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k2.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k3.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k4.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k5.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k6.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k7.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k8.c"
+"R:\QL\QLAY2\QLAY2-Src\op68k9.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kA.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kB.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kC.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kD.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kdefs.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kE.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kF.c"
+"R:\QL\QLAY2\QLAY2-Src\op68kstbl.c"
+"R:\QL\QLAY2\QLAY2-Src\op68ktbl.c"
+"R:\QL\QLAY2\QLAY2-Src\os.c"
+"R:\QL\QLAY2\QLAY2-Src\qldisk.c"
+"R:\QL\QLAY2\QLAY2-Src\qlio.c"
+"R:\QL\QLAY2\QLAY2-Src\qlmem.c"
+"R:\QL\QLAY2\QLAY2-Src\qlvers.c"
+"R:\QL\QLAY2\QLAY2-Src\readcpu.c"
+"R:\QL\QLAY2\QLAY2-Src\ser-win.c"
+"R:\QL\QLAY2\QLAY2-Src\spc-win.c"
+"R:\QL\QLAY2\QLAY2-Src\winmain.c"
+]
+Creating command line "cl.exe @T:\TEMP\Jimmy\RSP107.tmp" 
+Creating temporary file "T:\TEMP\Jimmy\RSP108.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/qlay2.pdb" /machine:I386 /out:"Release/qlay2.exe" 
+".\Release\cfg-win.obj"
+".\Release\debug.obj"
+".\Release\exe68k.obj"
+".\Release\getopt.obj"
+".\Release\keybuf.obj"
+".\Release\main.obj"
+".\Release\op68k0.obj"
+".\Release\op68k1.obj"
+".\Release\op68k2.obj"
+".\Release\op68k3.obj"
+".\Release\op68k4.obj"
+".\Release\op68k5.obj"
+".\Release\op68k6.obj"
+".\Release\op68k7.obj"
+".\Release\op68k8.obj"
+".\Release\op68k9.obj"
+".\Release\op68kA.obj"
+".\Release\op68kB.obj"
+".\Release\op68kC.obj"
+".\Release\op68kD.obj"
+".\Release\op68kdefs.obj"
+".\Release\op68kE.obj"
+".\Release\op68kF.obj"
+".\Release\op68kstbl.obj"
+".\Release\op68ktbl.obj"
+".\Release\os.obj"
+".\Release\qldisk.obj"
+".\Release\qlio.obj"
+".\Release\qlmem.obj"
+".\Release\qlvers.obj"
+".\Release\readcpu.obj"
+".\Release\ser-win.obj"
+".\Release\spc-win.obj"
+".\Release\winmain.obj"
+".\Release\qlayw.res"
+".\LIB\DDRAW.LIB"
+]
+Creating command line "link.exe @T:\TEMP\Jimmy\RSP108.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+cfg-win.c
+debug.c
+exe68k.c
+getopt.c
+keybuf.c
+main.c
+op68k0.c
+op68k1.c
+op68k2.c
+op68k3.c
+op68k4.c
+op68k5.c
+op68k6.c
+op68k7.c
+op68k8.c
+op68k9.c
+op68kA.c
+op68kB.c
+op68kC.c
+op68kD.c
+op68kdefs.c
+op68kE.c
+op68kF.c
+op68kstbl.c
+op68ktbl.c
+os.c
+qldisk.c
+qlio.c
+qlmem.c
+qlvers.c
+readcpu.c
+ser-win.c
+spc-win.c
+winmain.c
+Linking...
+link: executing 'E:\PROGRA~1\MICROS~3\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+qlay2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
