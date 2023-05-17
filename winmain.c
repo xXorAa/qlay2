@@ -72,6 +72,7 @@ static HINSTANCE hInstance;
 static int init_done;
 static BOOL hideMouse;
 static HCURSOR hCur;
+HWND SuperHwnd;
 
 static int i_maybe_bad;	// for atexit()
 

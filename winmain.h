@@ -29,4 +29,4 @@ extern int mouse_button;
 extern int emul_running;
 
 // Jimmy 093 - Used only for Draw_LED function
-HWND SuperHwnd;
+extern HWND SuperHwnd;
