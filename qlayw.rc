@@ -140,8 +140,8 @@ END
 // Bitmap
 //
 
-IDB_BMP_GERMAN          BITMAP  DISCARDABLE     "BMPRES\\germ.bmp"
-IDB_BMP_GERMAN_S        BITMAP  DISCARDABLE     "BMPRES\\germ_s.bmp"
+IDB_BMP_GERMAN          BITMAP  DISCARDABLE     "BMPRES/germ.bmp"
+IDB_BMP_GERMAN_S        BITMAP  DISCARDABLE     "BMPRES/germ_s.bmp"
 #endif    // German (Germany) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -204,8 +204,8 @@ END
 // Bitmap
 //
 
-IDB_BMP_SPANISH_S       BITMAP  DISCARDABLE     "BMPRES\\span_s.BMP"
-IDB_BMP_SPANISH         BITMAP  DISCARDABLE     "BMPRES\\span.bmp"
+IDB_BMP_SPANISH_S       BITMAP  DISCARDABLE     "BMPRES/span_s.BMP"
+IDB_BMP_SPANISH         BITMAP  DISCARDABLE     "BMPRES/span.bmp"
 #endif    // Spanish (Castilian) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -278,9 +278,9 @@ END
 // Bitmap
 //
 
-IDB_BMP_FRENCH          BITMAP  DISCARDABLE     "BMPRES\\fren.BMP"
-IDB_BMP_FRENCH_S        BITMAP  DISCARDABLE     "BMPRES\\fren_s.bmp"
-IDB_QLAY21              BITMAP  DISCARDABLE     "BMPRES\\qlphoto.bmp"
+IDB_BMP_FRENCH          BITMAP  DISCARDABLE     "BMPRES/fren.BMP"
+IDB_BMP_FRENCH_S        BITMAP  DISCARDABLE     "BMPRES/fren_s.bmp"
+IDB_QLAY21              BITMAP  DISCARDABLE     "BMPRES/qlphoto.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -539,8 +539,8 @@ END
 // Bitmap
 //
 
-IDB_BMP_ITALIAN         BITMAP  DISCARDABLE     "BMPRES\\ital.bmp"
-IDB_BMP_ITALIAN_S       BITMAP  DISCARDABLE     "BMPRES\\ital_s.bmp"
+IDB_BMP_ITALIAN         BITMAP  DISCARDABLE     "BMPRES/ital.bmp"
+IDB_BMP_ITALIAN_S       BITMAP  DISCARDABLE     "BMPRES/ital_s.bmp"
 #endif    // Italian (Italy) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -603,8 +603,8 @@ END
 // Bitmap
 //
 
-IDB_BMP_ENGLISH         BITMAP  DISCARDABLE     "BMPRES\\engl.bmp"
-IDB_BMP_ENGLISH_S       BITMAP  DISCARDABLE     "BMPRES\\engl_s.bmp"
+IDB_BMP_ENGLISH         BITMAP  DISCARDABLE     "BMPRES/engl.bmp"
+IDB_BMP_ENGLISH_S       BITMAP  DISCARDABLE     "BMPRES/engl_s.bmp"
 #endif    // English (U.K.) resources
 /////////////////////////////////////////////////////////////////////////////
 

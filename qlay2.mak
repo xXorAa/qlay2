@@ -3,21 +3,22 @@
 ifndef CFG
 CFG=qlay2 - Win32 Debug
 endif
-CC=gcc
+CC=i686-w64-mingw32-gcc
 CFLAGS=
 CXX=g++
 CXXFLAGS=$(CFLAGS)
-RC=windres -O COFF
+RC?=i686-w64-mingw32-windres
+RCFLAGS=-O COFF
 ifeq "$(CFG)"  "qlay2 - Win32 Release"
-CFLAGS+=-march=pentiumpro -D_M_IX86=600 -O2 -finline-functions -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS
-LD=$(CXX) $(CXXFLAGS)
+CFLAGS+=-O2 -finline-functions -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS
+LD=$(CC) $(CFLAGS)
 LDFLAGS=
 LDFLAGS+=-Wl,--subsystem,windows
 LIBS+=-lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32
 else
 ifeq "$(CFG)"  "qlay2 - Win32 Debug"
 CFLAGS+=-W -fexceptions -g -O0 -DWIN32 -D_DEBUG -D_WINDOWS -D_MBCS
-LD=$(CXX) $(CXXFLAGS)
+LD=$(CC) $(CFLAGS)
 LDFLAGS=
 LDFLAGS+=-Wl,--subsystem,windows
 LIBS+=-lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32
@@ -44,7 +45,7 @@ all: $(TARGET)
 	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -o $@ -c $<
 
 %.res: %.rc
-	$(RC) $(CPPFLAGS) -o $@ -i $<
+	$(RC) $(RCFLAGS) -o $@ -i $<
 
 SOURCE_FILES= \
 	cfg-win.c \
