@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{6C58EEC9-82FF-4C5F-8D89-D4DEED856EEC}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\qlay2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\qlay2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\qlay2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Release\qlay2.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\qlay2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\qlay2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\qlay2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\qlay2.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cfg-win.c" />
+    <ClCompile Include="debug.c" />
+    <ClCompile Include="exe68k.c" />
+    <ClCompile Include="getopt.c" />
+    <ClCompile Include="keybuf.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="op68k0.c" />
+    <ClCompile Include="op68k1.c" />
+    <ClCompile Include="op68k2.c" />
+    <ClCompile Include="op68k3.c" />
+    <ClCompile Include="op68k4.c" />
+    <ClCompile Include="op68k5.c" />
+    <ClCompile Include="op68k6.c" />
+    <ClCompile Include="op68k7.c" />
+    <ClCompile Include="op68k8.c" />
+    <ClCompile Include="op68k9.c" />
+    <ClCompile Include="op68kA.c" />
+    <ClCompile Include="op68kB.c" />
+    <ClCompile Include="op68kC.c" />
+    <ClCompile Include="op68kD.c" />
+    <ClCompile Include="op68kdefs.c" />
+    <ClCompile Include="op68kE.c" />
+    <ClCompile Include="op68kF.c" />
+    <ClCompile Include="op68kstbl.c" />
+    <ClCompile Include="op68ktbl.c" />
+    <ClCompile Include="os.c" />
+    <ClCompile Include="qldisk.c" />
+    <ClCompile Include="qlio.c" />
+    <ClCompile Include="qlmem.c" />
+    <ClCompile Include="qlvers.c" />
+    <ClCompile Include="readcpu.c" />
+    <ClCompile Include="ser-win.c" />
+    <ClCompile Include="spc-win.c" />
+    <ClCompile Include="winmain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cfg-win.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="dx_addon.h" />
+    <ClInclude Include="exe68k.h" />
+    <ClInclude Include="getopt.h" />
+    <ClInclude Include="keybuf.h" />
+    <ClInclude Include="op68ktbl.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="os.h" />
+    <ClInclude Include="pckeys.h" />
+    <ClInclude Include="qlayw.h" />
+    <ClInclude Include="qldisk.h" />
+    <ClInclude Include="qlio.h" />
+    <ClInclude Include="qlkeys.h" />
+    <ClInclude Include="qlmem.h" />
+    <ClInclude Include="qlvers.h" />
+    <ClInclude Include="readcpu.h" />
+    <ClInclude Include="roms.h" />
+    <ClInclude Include="ser-os.h" />
+    <ClInclude Include="spc-os.h" />
+    <ClInclude Include="sysconfig.h" />
+    <ClInclude Include="sysdeps.h" />
+    <ClInclude Include="winmain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="arrow.cur" />
+    <CustomBuild Include="qlay2.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="BMPRES\bmp_span.bmp" />
+    <Image Include="BMPRES\engl.bmp" />
+    <Image Include="BMPRES\engl_s.bmp" />
+    <Image Include="BMPRES\fren.BMP" />
+    <Image Include="BMPRES\fren_s.bmp" />
+    <Image Include="BMPRES\germ.bmp" />
+    <Image Include="BMPRES\germ_s.bmp" />
+    <Image Include="BMPRES\ital.bmp" />
+    <Image Include="BMPRES\ital_s.bmp" />
+    <Image Include="BMPRES\qlphoto.bmp" />
+    <Image Include="BMPRES\span.bmp" />
+    <Image Include="BMPRES\span_s.BMP" />
+    <Image Include="engl.bmp" />
+    <Image Include="engl_s.bmp" />
+    <Image Include="fren.BMP" />
+    <Image Include="fren_s.bmp" />
+    <Image Include="germ.bmp" />
+    <Image Include="germ_s.bmp" />
+    <Image Include="ico00001.ico" />
+    <Image Include="ital.bmp" />
+    <Image Include="ital_s.bmp" />
+    <Image Include="QL2K1.BMP" />
+    <Image Include="QL2K2.BMP" />
+    <Image Include="qlay.ico" />
+    <Image Include="qlay2.ico" />
+    <Image Include="qlay21.BMP" />
+    <Image Include="qlay22.BMP" />
+    <Image Include="qlaycfg.ico" />
+    <Image Include="qlphoto.bmp" />
+    <Image Include="span.bmp" />
+    <Image Include="span_s.BMP" />
+    <Image Include="timy_de_flag.BMP" />
+    <Image Include="tiny_es_flag.BMP" />
+    <Image Include="tiny_fr_flag.BMP" />
+    <Image Include="tiny_it_flag.BMP" />
+    <Image Include="tiny_uk_flag.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qlayw.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="LIB\DDRAW.LIB" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
