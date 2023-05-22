@@ -1,14 +1,22 @@
 # Makefile - qlay2.dsp
 
+ifeq ($(origin CC),default)
+CC = gcc
+endif
+
+ifeq ($(origin RC),default)
+RC = windres
+endif
+
 ifndef CFG
 CFG=qlay2 - Win32 Debug
 endif
-CC=i686-w64-mingw32-gcc
+
 CFLAGS=
 CXX=g++
 CXXFLAGS=$(CFLAGS)
-RC?=i686-w64-mingw32-windres
 RCFLAGS=-O COFF
+
 ifeq "$(CFG)"  "qlay2 - Win32 Release"
 CFLAGS+=-O2 -finline-functions -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS
 LD=$(CC) $(CFLAGS)
