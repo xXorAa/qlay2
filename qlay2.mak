@@ -4,7 +4,7 @@ ifeq ($(origin CC),default)
 CC = gcc
 endif
 
-ifeq ($(origin RC),default)
+ifeq ($(origin RC),undefined)
 RC = windres
 endif
 
